@@ -19,7 +19,7 @@ To color the triangles, standard triangle scanline rasterization was used. This 
 ## EVALUATION
 The resulting geometry app generates a Delaunay triangulation where all faces are rasterized with a random color. New points can be added by left clicking anywhere within the window. There is a slight delay built in for adding points and a simple check to prevent points from being added right on top of one another. While improvements could certainly be made, this accomplishes the original goal of the project.
 
-CONCLUSION AND FUTURE WORK
+## CONCLUSION AND FUTURE WORK
 This project was satisfying to work on and greatly improved my understanding of Delaunay triangulation. It also helped solidify my grasp of core computational geometry concepts. I am now better able to visualize and explain triangulation, and I can think more critically about applications that use geometric algorithms. In terms of future work here a couple things come to mind. The implementation currently relies on a Triangle class, but it could be refractored to work entirely out of the vertex buffer to save space. The Voronoi diagram could be calculated in O(N) time from here, and each face could be give a color unique to that of its neighbors by solving a variation of the k-coloring problem.
 
 ## REFERENCES
